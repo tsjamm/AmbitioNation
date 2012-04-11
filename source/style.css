@@ -28,3 +28,32 @@ a:hover {text-decoration:underline;
 }
 #reg {font-family: Georgia; margin:0; padding:0; color:#26292b; font-size:12px; width:100%; background:url(images/IndexBackground.png) repeat-x left top #f5f6f8
 }
+#buttons{
+	text-align:center;
+	position:relative;
+	top: 5px;
+	height: 100%;
+	padding-left: 0px;
+	background: url(images/buttons.png) center top no-repeat;
+	padding: 0px 0px 0px 50px;
+	width: 100%
+}
+#buttons a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 16px;
+	height: 34px;	
+}
+.but {
+	width: 145px;
+}
+#buttons .but:hover {
+	background: url(images/but_hover.jpg) center top repeat-x;
+	}	
+.but_t {background: url(images/but_hover.jpg) center top repeat-x;}

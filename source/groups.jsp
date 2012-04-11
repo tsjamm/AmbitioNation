@@ -5,13 +5,11 @@
 %>
 <html>
 <head>
-<title>Home</title>
+<title>groups</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<%@include file="header_session.jsp"%>
 
 </body>
 </html>

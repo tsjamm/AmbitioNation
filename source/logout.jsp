@@ -5,13 +5,18 @@
 %>
 <html>
 <head>
-<title>Home</title>
+<title>logout</title>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<%@include file="header_session.jsp"%>
-
+<%		
+	session.invalidate();          
+%>
+	<h2>Redirecting To Index Page....</h2>
+    <script type="text/javascript">
+    	alert('You Have Been Logged Out');
+    	window.location = './index.jsp';
+    </script>
 </body>
 </html>
