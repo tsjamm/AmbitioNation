@@ -12,6 +12,7 @@
 
 <body style="background: url(images/IndexBackground.png) center  no-repeat; " >
 <%@include file="header.jsp"%>
+
 <div align="center">
 	<h2>Welcome To Ambitionation!</h2>
 	<h3><i>"Ideate.Collaborate.Create"</i></h3>

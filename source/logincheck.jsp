@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<%@include file="db.jsp"%>
+
     <%
       try
       {
@@ -45,6 +45,9 @@
           String lname=null;
           
           //Accessing Database
+          Connection con;
+			Class.forName("com.ibm.db2.jcc.DB2Driver");
+			con = DriverManager.getConnection("jdbc:db2:DBTEST");
           ResultSet rs;
           Statement st;
           st=con.createStatement();

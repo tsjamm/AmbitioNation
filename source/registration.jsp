@@ -68,10 +68,6 @@
 				<td width="63%" height="25"><input name="phone" size="20"></td>
 			</tr>
 			<tr>
-				<td width="37%" height="22"><b>Address</b></td>
-				<td width="63%" height="22"><textarea rows="2" name="add" cols="15"></textarea></td>
-			</tr>
-			<tr>
 				<td width="37%" height="25"><b>City</b></td>
 				<td width="63%" height="25"><input name="city" size="20"></td>
 			</tr>

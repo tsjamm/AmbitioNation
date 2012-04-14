@@ -45,7 +45,7 @@
 		<div style="font-size: 24px; color: #FFFFFF; padding: 6px 0">	
 			<form name=logoutform method="POST" action="logout.jsp">
 				<b><%= fname%> <%=lname%></b>
-				<input id="submit" type="image" src="images/logout.png" value="submit" align="right">
+				<input id="submit1" type="image" src="images/logout.png" value="submit" align="right">
 				<div style="height: 5px; font-size: 0px">
 					<img src="images/spacer.gif" alt="">
 				</div>

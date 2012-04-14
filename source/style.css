@@ -24,7 +24,9 @@ a:hover {text-decoration:underline;
 }
 .input_1 {font-family:Georgia; font-size:10px; color:#737373; background:#f8f8f8; width:133px; height:19px; padding:2px 0 0 8px; border:1px #dcdcdc inset;
 }
-#submit {position:absolute; width:86px; left:398px; top:27px
+#submit {position:absolute; width:86px; left: 400px; top:27px
+}
+#submit_1 {position:relative; width:86px; left: 0px; top:27px
 }
 #reg {font-family: Georgia; margin:0; padding:0; color:#26292b; font-size:12px; width:100%; background:url(images/IndexBackground.png) repeat-x left top #f5f6f8
 }

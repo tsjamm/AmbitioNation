@@ -9,4 +9,11 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<env-entry>
+		<description>
+		Auto Generated - SDO Datasource connection to jdbc:db2://localhost:50000/DBTEST:retrieveMessagesFromServerOnGetMessage=true;</description>
+		<env-entry-name>DBTEST</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>jdbc:db2://localhost:50000/DBTEST:retrieveMessagesFromServerOnGetMessage=true;,com.ibm.db2.jcc.DB2Driver,jammala,{xor}LD42MzY4Nys=</env-entry-value>
+	</env-entry>
 </web-app>

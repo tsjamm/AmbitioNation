@@ -29,7 +29,6 @@
 			<option selected="selected" value="userid">User ID</option>
 			<option value="fname">First Name</option>
 			<option value="lname">Last Name</option>
-			<option value="date">Date</option>
 		</select>
 	</form>
 </div>

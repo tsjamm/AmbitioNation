@@ -27,10 +27,13 @@
 %>
 <%
       puid = (String)request.getParameter("puid");
-      if(request.getParameter("puid") == null)
+      if(puid == null)
       	puid=uid;
       try
       {
+          	Connection con;
+			Class.forName("com.ibm.db2.jcc.DB2Driver");
+			con = DriverManager.getConnection("jdbc:db2:DBTEST");
           ResultSet rs;
           Statement st;
           st=con.createStatement();
@@ -44,7 +47,6 @@
           state=rs.getString("state");
           work=rs.getString("work");
           study=rs.getString("study");
-          rating1 = rs.getInt("rating");
           }
           //out.println(uid);
           //out.println(pa);
@@ -83,10 +85,11 @@
               <tr>
                 <td width="37%" height="25"><b>UserName</b></td>
                 <td width="63%" height="25"><b><% out.println(uid); %></b></td>
-                <% if(puid == uid)
-                {%>
-                <td width="63%" height="25"><input type="submit" value="Edit Profile" name="B2"></td> 
-                <% } %>
+                <% //if(puid == uid)
+                	{
+                		out.println("<td width=\"63%\" height=\"25\"><input type=\"submit\" value=\"Edit Profile\" name=\"B2\"></td>");
+                	}
+                %>
               </tr>
               
               <tr>

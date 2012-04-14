@@ -2,7 +2,7 @@
 <%@page
 	language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"
-	import="java.sql.*";
+	import="java.sql.*"
 %>
 <%! StringBuffer dbmessages1 = new StringBuffer();
 	StringBuffer dbmessages2 = new StringBuffer();
@@ -50,6 +50,9 @@ function show_messages()
 
 <%@include  file="header_session.jsp"%>
 <% 
+          	Connection con;
+			Class.forName("com.ibm.db2.jcc.DB2Driver");
+			con = DriverManager.getConnection("jdbc:db2:DBTEST");
           st1=con.createStatement();
           st2=con.createStatement();
           st3=con.createStatement();

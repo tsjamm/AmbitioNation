@@ -2,8 +2,8 @@
 <%@page
 	language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"
-	import="java.sql.*"
 	import="java.security.*"
+	import="java.sql.*"
 %>
 <html>
 <head>
@@ -14,9 +14,9 @@
 <body>
 
 <%@include  file="header.jsp"%>
-<%@include  file="db.jsp"%>
+
 <%
- 
+
       try
       {
          
@@ -26,7 +26,6 @@
           String lname=request.getParameter("lname");
           String pw=request.getParameter("pword");
           String phone=request.getParameter("phone");
-          String add=request.getParameter("add");
           String city=request.getParameter("city");
           String state=request.getParameter("state");
           String date=request.getParameter("date");
@@ -56,7 +55,9 @@
 		}
 		pahash=hexString.toString();
         //End of Hash  
-          
+          Connection con;
+			Class.forName("com.ibm.db2.jcc.DB2Driver");
+			con = DriverManager.getConnection("jdbc:db2:DBTEST");
           ResultSet rs1;
           Statement st;
           st=con.createStatement();
@@ -71,7 +72,7 @@
           	   out.println("Username Already Exists");
         	}
         	else
-        	{st.executeUpdate("insert into user values('"+uid+"','"+pahash+"','"+ambition+"','"+fname+"','"+lname+"','"+year+"-"+month+"-"+date+"','"+add+"','"+city+"','"+state+"','"+phone+"','"+work+"','"+study+"')");
+        	{st.executeUpdate("insert into user values('"+uid+"','"+pahash+"','"+ambition+"','"+fname+"','"+lname+"','"+year+"-"+month+"-"+date+"','"+city+"','"+state+"','"+phone+"','"+work+"','"+study+"')");
         	//session.setAttribute("userid",uid);
         	out.println("Successfully Registered! Log In to Continue...");
         	}

@@ -12,9 +12,15 @@
 </head>
 <body>
 <%
+	try{
 	Connection con;
 	Class.forName("com.ibm.db2.jcc.DB2Driver");
 	con = DriverManager.getConnection("jdbc:db2:DBTEST");
+	}
+	catch(Exception e)
+	{
+		out.println(e);
+	}
 %>
 </body>
 </html>
